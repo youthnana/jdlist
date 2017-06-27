@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en-US">
+    <meta charset="UTF-8">
+	<title>
+	</title>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/jquery-cookie/1.3.1/jquery.cookie.js"></script>
+	
+	<link rel="stylesheet" href="jd.css">
+	</head>
+	<body>
+		
+		<div class="wrap" id="wrap">
+			<ul id="test">
+		        <li data-id="a">
+					<span>
+						家用电器
+					</span>
+				</li>
+				<li data-id="b">
+					<span>
+						手机 / 运营商 / 数码
+					</span>
+				</li>
+				<li data-id="c">
+					<span>
+						电脑 / 办公
+					</span>
+				</li>
+				<li data-id="d">
+					<span>
+						家居 / 家具 / 家装 / 厨具
+					</span>
+				</li>
+				<li data-id="e">
+					<span>
+						男装 / 女装 / 童装 / 内衣
+					</span>
+				</li>
+				<li data-id="f">
+					<span>
+						美妆个护 / 宠物
+					</span>
+				</li>
+			</ul>
+			<div id="sub" class="none">
+				<div id="a" class="sub_content none">
+					<dl>
+						<dt>
+							<a href="#">
+								电视
+								<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								曲面电视
+							</a>
+							<a href="#">
+								超薄电视
+							</a>
+							<a href="#">
+								HDR电视
+							</a>
+							<a href="#">
+								4K超清电视
+							</a>
+							<a href="#">
+								55寸
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								空调
+								<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								壁挂式空调
+							</a>
+							<a href="#">
+								柜式空调
+							</a>
+							<a href="#">
+								中央空调
+							</a>
+							<a href="#">
+								以旧换新
+							</a>
+							<a href="#">
+								空调配件
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								洗衣机
+								<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								滚筒洗衣机
+							</a>
+							<a href="#">
+								洗烘一体机
+							</a>
+							<a href="#">
+								波轮洗衣机
+							</a>
+							<a href="#">
+								迷你洗衣机
+							</a>
+							<a href="#">
+								洗衣机配件
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<div id="b" class="sub_content none">
+					<dl>
+						<dt>
+							<a href="#">
+								手机通讯
+								<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								手机
+							</a>
+							<a href="#">
+								对讲机
+							</a>
+							<a href="#">
+								以旧换新
+							</a>
+							<a href="#">
+								手机维修
+							</a>
+							
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								手机配件
+								<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								手机壳
+							</a>
+							<a href="#">
+								手机膜
+							</a>
+							<a href="#">
+								数据线
+							</a>
+							<a href="#">
+								充电器
+							</a>
+							<a href="#">
+								手机电池
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								运营商<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								合约机
+							</a>
+							<a href="#">
+								选号码
+							</a>
+							<a href="#">
+								固话宽带
+							</a>
+							<a href="#">
+								选套餐
+							</a>
+							<a href="#">
+								中国移动
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								摄影摄像<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								数码相机
+							</a>
+							<a href="#">
+								单反相机
+							</a>
+							<a href="#">
+								拍立得
+							</a>
+							<a href="#">
+								摄像机
+							</a>
+							<a href="#">
+								运动相机
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								数码配件<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								智能设备<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								存储卡
+							</a>
+							<a href="#">
+								三脚架
+							</a>
+							<a href="#">
+								滤镜
+							</a>
+							<a href="#">
+								闪光灯
+							</a>
+							<a href="#">
+								读卡器
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<div id="c" class="sub_content none">
+					<dl>
+						<dt>
+							<a href="#">
+								电脑整机<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								电脑配件<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								笔记本
+							</a>
+							<a href="#">
+								游戏本
+							</a>
+							<a href="#">
+								平板电脑
+							</a>
+							<a href="#">
+								台式机
+							</a>
+							<a href="#">
+								一体机
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								外设产品<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								鼠标
+							</a>
+							<a href="#">
+								键盘
+							</a>
+							<a href="#">
+								U盘
+							</a>
+							<a href="#">
+								鼠标垫
+							</a>
+							<a href="#">
+								移动硬盘
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<div id="d" class="sub_content none">
+					<dl>
+						<dt>
+							<a href="#">
+								厨具<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								家纺<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								锅具
+							</a>
+							<a href="#">
+								酒具
+							</a>
+							<a href="#">
+								餐具
+							</a>
+							<a href="#">
+								菜板
+							</a>
+							<a href="#">
+								刀具
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								灯具<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+							<a href="#">
+								三级菜单
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								家装软饰<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								吸顶灯
+							</a>
+							<a href="#">
+								台灯
+							</a>
+							<a href="#">
+								装饰灯
+							</a>
+							<a href="#">
+								吊灯
+							</a>
+							<a href="#">
+								LED灯
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<div id="e" class="sub_content none">
+					<dl>
+						<dt>
+							<a href="#">
+								女装<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								商场同款
+							</a>
+							<a href="#">
+								当季热卖
+							</a>
+							<a href="#">
+								连衣裙
+							</a>
+							<a href="#">
+								T恤
+							</a>
+							<a href="#">
+								牛仔裤
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								男装<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								商场同款
+							</a>
+							<a href="#">
+								当季热卖
+							</a>
+							<a href="#">
+								牛仔裤
+							</a>
+							<a href="#">
+								T恤
+							</a>
+							<a href="#">
+								西装
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<div id="f" class="sub_content none">
+					<dl>
+						<dt>
+							<a href="#">
+								面部护理<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								补水保湿
+							</a>
+							<a href="#">
+								卸妆
+							</a>
+							<a href="#">
+								洁面
+							</a>
+							<a href="#">
+								精华
+							</a>
+							<a href="#">
+								眼霜
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								洗发护发<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								洗发
+							</a>
+							<a href="#">
+								护发
+							</a>
+							<a href="#">
+								染发
+							</a>
+							<a href="#">
+								定型
+							</a>
+							<a href="#">
+								美发工具
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								身体护理<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								补水保湿
+							</a>
+							<a href="#">
+								沐浴
+							</a>
+							<a href="#">
+								润肤
+							</a>
+							<a href="#">
+								颈部
+							</a>
+							<a href="#">
+								手足
+							</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								口腔清理<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								牙膏
+							</a>
+							<a href="#">
+								牙刷
+							</a>
+							<a href="#">
+								漱口水
+							</a>
+							<a href="#">
+								套装
+							</a>
+							
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">
+								香水彩妆<i>&gt;</i>
+							</a>
+						</dt>
+						<dd>
+							<a href="#">
+								BB霜
+							</a>
+							<a href="#">
+								化妆棉
+							</a>
+							<a href="#">
+								女士香水
+							</a>
+							<a href="#">
+								男士香水
+							</a>
+							<a href="#">
+								底妆
+							</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	
+	<script src="jd.js"></script>
+	</body>
+</html>
